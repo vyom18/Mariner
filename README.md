@@ -90,15 +90,15 @@ The output file is a JSON file in the format:
 To run Mariner, you must create a token. The GitHub token must be a valid personal access token.
 It does not require any permissions beyond the default, so when you create it you can leave all
 the boxes unchecked. Be careful not to share your token with anyone. If it gets exposed, revoke
-it and create a replacement.
+it and create a replacement and it can create a problem.
 See <https://github.com/settings/tokens/new> for how to create a token.
 
 ### More details (possibly outdated)
 
-Mariner can be called from Javascript or from Typescript. You can see an example here:
+Mariner can be called from Javascript or from Typescript. You can see an example here and also explore it:
 <https://github.com/indeedeng/Mariner/blob/master/examples/runOldCode.ts>
 
-Mariner is in transition from the old way of accessing GitHub data (REST) to the new way (GraphQL)
+Mariner is in transition from the old way of accessing GitHub data (REST) to the new way (GraphQL).It just evolving change from generation/technology
 
 To invoke mariner using the new GraphQL code, Invoke the finder(), passing the
 appropiate parameters in finder.findIssues() you can see an example here:
@@ -151,8 +151,8 @@ The [Open Source team at Indeed](https://opensource.indeedeng.io/), who can be r
 If you are a maintainer, you can follow these steps to publish a new version of the package:
 
 1. Create a branch named "publish-x.y.z (x.y.z will be the version number)
-1. Update the version number in package.json
-1. Be sure the version number in package.json is correct
+1. Update the new version number in package.json
+1. Be sure the version number in package.json is correct as per requirement
 1. Run `npm install` to update package-lock.json
     - Search package-lock.json to be sure there are no references to 'nexus'
 1. Run `npm run build` and `npm run lint` to make sure there are no errors
